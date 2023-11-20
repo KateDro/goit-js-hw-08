@@ -4,8 +4,8 @@ import { galleryItems } from './gallery-items';
 
 console.log(galleryItems);
 
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const refs = {
   galleryContainer: document.querySelector('div.gallery'),
@@ -23,6 +23,9 @@ function createGalleryItemsMarkup(galleryItems) {
       `;
     })
     .join('');
-};
+}
 
-let lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay:"250ms"});
+let lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: '250ms',
+});
