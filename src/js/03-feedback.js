@@ -60,8 +60,4 @@ function setValueToInput() {
   formInputValues.email = tempValues.email;
   refs.textarea.value = tempValues.message;
   formInputValues.message = tempValues.message;
-
-  // console.log('пушимо дані з localStorage');
-  // console.log(tempValues);
-  // console.log(formInputValues);
 }
