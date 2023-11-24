@@ -42,15 +42,11 @@ function onSubmit(event) {
   console.log(formInputValues);
 
   event.currentTarget.reset();
-  localStorage.clear();
-
-  // console.log(formInputValues);
-  // console.log(localStorage);
+  localStorage.removeItem('feedback-form-state');
 }
 
 function setValueToInput() {
   if (localStorage.getItem('feedback-form-state') === null) {
-    // console.log('localStorage порожній');
     return;
   }
 
